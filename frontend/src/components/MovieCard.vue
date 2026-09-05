@@ -24,7 +24,7 @@ const confirmDelete = () => {
 <template>
   <div class="movie-card">
     <div class="poster-container">
-      <img :src="movie.imagen" :alt="movie.nombre" class="poster" @error="$event.target.src='https://via.placeholder.com/500x750?text=Sin+Imagen'" />
+      <img :src="movie.imagen" :alt="movie.nombre" class="poster" @error="$event.target.src='https://via.placeholder.com/500x750?text=Sin+Imagen'; $event.target.onerror = null" />
       <div class="year-badge" v-if="movie.anio">{{ movie.anio }}</div>
     </div>
     
