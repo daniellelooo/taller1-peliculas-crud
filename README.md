@@ -22,10 +22,11 @@ CRUD completo de películas con **NestJS + Prisma 7 + SQLite** en el backend y *
 
 ```bash
 cd backend
-npm install
+npm install            # tambien genera el cliente de Prisma (postinstall)
 cp .env.example .env
-npx prisma migrate dev
-npm run prisma:seed
+npx prisma generate    # por si el postinstall no corrio
+npx prisma migrate dev # crea dev.db y aplica las migraciones
+npm run prisma:seed    # carga 12 peliculas y el usuario de prueba
 npm run start:dev
 ```
 
