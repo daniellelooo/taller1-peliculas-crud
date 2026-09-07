@@ -99,7 +99,7 @@ const peliculas = [
   },
   {
     nombre: 'El Laberinto del Fauno',
-    imagen: 'https://image.tmdb.org/t/p/w500/67roafcTPUL8lm3ooEQfPVamvzj.jpg',
+    imagen: 'https://image.tmdb.org/t/p/w500/z7xXihu5wHuSMWymq5VAulPVuvg.jpg',
     director: 'Guillermo del Toro',
     anio: 2006,
     genero: 'Fantasia',
